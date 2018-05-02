@@ -7,7 +7,8 @@
         :class="buttonClasses(button)"
         class="button"
         v-for="button in row"
-        v-on:click="click(button)">
+        v-on:click="click(button)"
+        :name="'button-' + button.text">
           {{button.text}}
         </button>
       </div>
